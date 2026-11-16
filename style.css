@@ -602,6 +602,7 @@ h2 {
   justify-content: space-between;
   color: #d1dbdc;
   background: #152b40;
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
 }
 .site-footer p,
 .site-footer > a:last-child {
@@ -902,4 +903,134 @@ h2 {
   .quick-facts span { font-size: 11px; }
   .work-type { font-size: 10px; }
   .work-caption h3 { font-size: 15px; }
+}
+
+/* Keep the page on one navy blue and give each main panel room to breathe */
+:root {
+  --ink: #203954;
+  --blue: #203954;
+  --teal: #203954;
+  --orange: #203954;
+  --coral: #203954;
+  --yellow: #203954;
+  --paper: #f7f6f2;
+  --white: #fffefa;
+}
+.hero, .experience, .contact { background: var(--blue); }
+.hero { min-height: 100vh; min-height: 100svh; }
+.section-pad {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h1 em, h2 em { color: var(--blue); }
+.hero h1 em, .experience h2 em, .contact h2 em { color: white; }
+.wordmark span, .text-link span, .hero-caption span:first-child, .section-title span,
+.date, .work-type, .work-caption .work-number, .skill-group p span,
+.contact-email span, .linkedin-link, .site-footer > a:last-child,
+.portrait-stamp, .social-links a span { color: var(--blue); }
+.site-footer { background: var(--blue); }
+.site-header .wordmark span { color: white; }
+.site-footer .wordmark span, .site-footer > a:last-child { color: white; }
+.hero .wordmark span, .hero .text-link span, .hero .social-links a span,
+.hero .portrait-stamp { color: white; }
+.nav-links a:hover, .nav-note:hover { color: white; }
+.social-links a { border-color: rgba(255,255,255,.65); }
+.section-heading > p { border-left-color: var(--blue); }
+.education-block { border-left-color: var(--blue); }
+.work-card:nth-child(2) a, .work-card:nth-child(3) a, .work-card:nth-child(4) a { background: #eeece7; }
+.achievement:nth-child(2) strong, .achievement:nth-child(3) strong, .achievement:nth-child(4) strong { color: var(--blue); }
+.skills { background: #eeece7; }
+.experience .section-title span, .contact .section-title span { color: white; }
+
+@media (max-width: 620px) {
+  .hero, .section-pad { min-height: 100vh; min-height: 100svh; }
+}
+
+/* Bring back a warm text accent while keeping the section backgrounds calm */
+:root {
+  --accent: #b75e43;
+  --accent-light: #f0b184;
+  --footer: #172635;
+  --teal: var(--accent);
+  --orange: var(--accent);
+  --coral: var(--accent);
+  --yellow: var(--accent);
+}
+.hero, .experience { background: var(--blue); }
+.contact { background: var(--accent); }
+.site-footer { background: var(--footer); }
+h1 em, h2 em { color: var(--accent); }
+.hero h1 em, .experience h2 em, .contact h2 em { color: var(--accent-light); }
+.section-title span { color: var(--accent); }
+.experience .section-title span, .contact .section-title span { color: var(--accent-light); }
+.section-label, .work-type, .skill-group h3, .skill-group p span,
+.work-number, .linkedin-link, .contact-email span,
+.site-footer > a:last-child, .wordmark span { color: var(--accent); }
+.hero .wordmark span, .hero .text-link span, .hero .social-links a span,
+.hero .portrait-stamp { color: var(--accent-light); }
+.hero .eyebrow, .experience .date { color: var(--accent-light); }
+.section-heading > p { border-left-color: var(--accent); }
+.education-block { border-left-color: var(--accent); }
+.achievement:nth-child(2) strong, .achievement:nth-child(3) strong,
+.achievement:nth-child(4) strong { color: var(--accent); }
+.work-card:nth-child(2) a, .work-card:nth-child(3) a,
+.work-card:nth-child(4) a { background: #eee7df; }
+.contact .section-title, .contact .section-title span { color: white; }
+.contact .section-title span { color: var(--accent-light); }
+.contact-content .eyebrow { color: white; }
+.linkedin-link { border-color: #e3d7cc; }
+.site-footer .wordmark span, .site-footer > a:last-child { color: var(--accent-light); }
+
+/* Clear experience and skills cards */
+.experience-row {
+  grid-template-columns: .85fr 1.15fr;
+  align-items: stretch;
+  gap: 22px;
+}
+.experience-role, .experience-detail {
+  padding: 30px;
+  border-radius: 14px;
+  color: var(--ink);
+  background: var(--white);
+}
+.experience-role { border-top: 4px solid var(--accent); }
+.experience-role .date { margin: 0 0 22px; color: var(--accent); font-size: 12px; }
+.experience-role h2 { font-size: clamp(29px, 3.3vw, 42px); line-height: 1.12; }
+.experience-role .company { margin: 16px 0 19px; color: var(--muted); line-height: 1.55; }
+.role-tag { display: inline-block; padding: 5px 11px; border-radius: 20px; color: var(--accent); background: #f4e8e0; font-size: 12px; font-weight: 700; }
+.experience-intro { margin: 0 0 24px; color: var(--ink); font-size: 15px; font-weight: 600; }
+.detail-label { margin: 0 0 8px; color: var(--accent); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; }
+.experience-detail ul { margin: 0; padding-left: 19px; color: #525d66; font-size: 14px; }
+.experience-detail li { padding: 6px 0 6px 3px; }
+.experience-detail li::marker { color: var(--accent); }
+
+.skills-content { grid-template-columns: 1fr; gap: 35px; }
+.skills-content > h2 { max-width: 580px; }
+.skill-groups { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.skill-group {
+  min-height: 190px;
+  padding: 23px;
+  border: 1px solid #e2ddd6;
+  border-top: 4px solid var(--accent);
+  border-radius: 13px;
+  background: var(--white);
+  box-shadow: 0 8px 22px rgba(32, 57, 84, .045);
+}
+.skill-number { display: block; margin-bottom: 21px; color: var(--accent); font-size: 12px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.skill-group h3 { margin: 0 0 9px; color: var(--ink); font-size: 17px; }
+.skill-group p { margin: 0; color: #5d6670; font-size: 14px; line-height: 1.6; }
+
+@media (max-width: 850px) {
+  .skill-groups { gap: 12px; }
+  .skill-group { padding: 18px; }
+}
+@media (max-width: 620px) {
+  .experience-row { grid-template-columns: 1fr; gap: 14px; }
+  .experience-role, .experience-detail { padding: 23px; }
+  .skill-groups { grid-template-columns: 1fr; gap: 12px; }
+  .skill-group { min-height: 0; }
+  .skill-number { margin-bottom: 10px; }
 }
