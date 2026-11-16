@@ -113,10 +113,8 @@ img {
 .section-label,
 .work-type,
 .date,
-.hero-caption,
 .portrait-tag,
-.contact-meta,
-.work-footnote {
+.contact-meta {
   font-family: var(--mono);
   font-size: 10px;
   letter-spacing: 0.12em;
@@ -169,16 +167,6 @@ h2 em {
 }
 .text-link span {
   margin-left: 6px;
-  color: #e8a276;
-}
-.hero-caption {
-  display: flex;
-  gap: 22px;
-  margin-top: 75px;
-  color: #9aabb5;
-  font-size: 9px;
-}
-.hero-caption span:first-child {
   color: #e8a276;
 }
 .hero-portrait {
@@ -358,11 +346,6 @@ h2 {
   color: #929e9d;
   font-family: var(--mono);
   font-size: 11px;
-}
-.work-footnote {
-  margin: 34px 0 0;
-  color: #78847f;
-  font-size: 9px;
 }
 
 .experience {
@@ -699,9 +682,6 @@ h2 {
   .hero-intro {
     max-width: 390px;
   }
-  .hero-caption {
-    margin-top: 40px;
-  }
   .hero-portrait {
     width: min(78%, 350px);
     margin-right: 18px;
@@ -880,4 +860,46 @@ h2 {
   .work-caption { padding: 8px 9px 10px; }
   .work-caption h3 { font-size: 14px; }
   .quick-facts span { font-size: 10px; }
+}
+
+/* One warm, consistent palette with clearer supporting text */
+:root {
+  --ink: #202e40;
+  --blue: #243b55;
+  --teal: #b85f45;
+  --paper: #f7f3ec;
+  --white: #fffdf8;
+  --line: #ded5ca;
+  --muted: #625f5a;
+  --orange: #c66d4e;
+  --coral: #b85f45;
+  --yellow: #d7a54f;
+}
+.hero { background: var(--blue); }
+.skills { background: #f0e8de; }
+.education-block { background: #f1e8dd; border-left-color: var(--teal); }
+.work-card:nth-child(2) a, .work-card:nth-child(3) a, .work-card:nth-child(4) a { background: #eee2d6; }
+.achievement:nth-child(2) strong, .achievement:nth-child(3) strong, .achievement:nth-child(4) strong { color: var(--coral); }
+.eyebrow, .date, .work-type, .portrait-tag, .contact-meta {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .06em;
+}
+.date { font-variant-numeric: tabular-nums; }
+.quick-facts span { font-family: 'DM Sans', Arial, sans-serif; font-size: 12px; font-weight: 600; }
+.skill-group h3 { font-family: 'DM Sans', Arial, sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0; text-transform: none; }
+.skill-group p { font-size: 14px; font-weight: 500; }
+.work-caption h3 { font-size: 17px; font-weight: 700; }
+.work-type { color: var(--teal); }
+.nav-links a, .nav-note { font-size: 13px; font-weight: 600; }
+.social-links a { font-size: 14px; font-weight: 700; }
+.button, .text-link { font-size: 14px; font-weight: 700; }
+.portrait-tag { font-size: 11px; }
+.contact-meta { font-size: 11px; }
+
+@media (max-width: 620px) {
+  .quick-facts span { font-size: 11px; }
+  .work-type { font-size: 10px; }
+  .work-caption h3 { font-size: 15px; }
 }
