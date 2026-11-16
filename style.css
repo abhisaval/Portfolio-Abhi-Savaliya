@@ -1128,3 +1128,162 @@ html { scroll-padding-top: 76px; }
 .experience-role { border: 2px solid #d8cec3; border-top: 4px solid var(--accent); }
 .skill-group { border-width: 2px; border-top-width: 4px; }
 .education-block { border-width: 2px; border-left-width: 4px; }
+
+/* Reversible palette trial: aubergine with gentle rose, lavender and gold details */
+:root {
+  --ink: #30283a;
+  --blue: #493650;
+  --teal: #866394;
+  --accent: #866394;
+  --accent-light: #dfc9e7;
+  --coral: #c97978;
+  --orange: #c97978;
+  --yellow: #c7a25a;
+  --footer: #493650;
+}
+.site-header { background: rgba(73, 54, 80, .96); }
+.hero, .experience, .contact { background: #493650; }
+.section-title span, .date, .work-type, .work-number,
+.skill-group p span, .linkedin-link, .contact-email span,
+.site-footer > a:last-child { color: #866394; }
+.hero h1 em, .experience h2 em, .contact h2 em { color: #dfc9e7; }
+.hero .wordmark span, .hero .text-link span, .hero .social-links a span { color: #dfc9e7; }
+
+.about-lead { background: #f0e8f3; border-color: #c5a9cf; border-top-color: #866394; }
+.intro-copy { border-color: #d4c1dc; }
+.experience-role { border-color: #c5a9cf; border-top-color: #866394; background: #f0e8f3; }
+.experience-detail { border-color: #d5b9c2; background: #fffdfa; }
+.role-tag { color: #745584; background: #e9dced; }
+.skill-group:nth-child(1) { border-color: #c5a9cf; border-top-color: #866394; background: #f0e8f3; }
+.skill-group:nth-child(2) { border-color: #d5b9c2; border-top-color: #c97978; background: #f7eae8; }
+.skill-group:nth-child(3) { border-color: #ddc99f; border-top-color: #c7a25a; background: #f6f0df; }
+.education-block { border-color: #c5a9cf; border-left-color: #866394; background: #f0e8f3; }
+.achievement { border-color: #d4c1dc; background: #fffdfa; }
+.achievement:nth-child(3) { border-color: #d5b9c2; background: #f7eae8; }
+.achievement:nth-child(4) { border-color: #ddc99f; background: #f6f0df; }
+.achievement strong { color: #745584; }
+.certificate-card { border-color: #d4c1dc; background: #fffdfa; }
+.contact-card { border-color: #c5a9cf; }
+.work-card { border-color: #d4c1dc; }
+.work-card:nth-child(2) { border-color: #d5b9c2; }
+.work-card:nth-child(3) { border-color: #ddc99f; }
+.work-card:nth-child(4) { border-color: #c5a9cf; }
+
+/* Keep purple for headings and outlines; neutral text and white card interiors */
+:root {
+  --muted: #62666d;
+  --accent: #866394;
+  --accent-light: #dfc9e7;
+}
+.intro-copy, .intro-copy p, .company, .experience-detail ul,
+.achievement span, .skill-group p, .contact-card > p,
+.contact-meta, .portrait-tag { color: #62666d; }
+.about-lead, .intro-copy, .experience-role, .experience-detail,
+.skill-group, .education-block, .achievement, .certificate-card,
+.contact-card, .work-card {
+  background: #fffefa;
+  border: 3px solid #b49bc0;
+}
+.about-lead, .experience-role, .skill-group { border-top: 4px solid #866394; }
+.education-block { border-left: 4px solid #866394; }
+.skill-group:nth-child(1), .skill-group:nth-child(2), .skill-group:nth-child(3),
+.achievement:nth-child(3), .achievement:nth-child(4),
+.work-card:nth-child(2), .work-card:nth-child(3), .work-card:nth-child(4) {
+  background: #fffefa;
+}
+.skill-group:nth-child(1), .skill-group:nth-child(2), .skill-group:nth-child(3) {
+  border-color: #b49bc0;
+  border-top-color: #866394;
+}
+.achievement:nth-child(3), .achievement:nth-child(4) { border-color: #b49bc0; }
+.work-card:nth-child(2), .work-card:nth-child(3), .work-card:nth-child(4) { border-color: #b49bc0; }
+.experience-detail { border-color: #b49bc0; }
+.certificate-card { border-color: #b49bc0; }
+.contact-card { border-color: #b49bc0; }
+.role-tag { color: #745584; background: #f4f1f5; }
+/* Muted gold gives the emphasized phrases contrast against purple */
+h1 em, h2 em { color: #9b7132; }
+.hero h1 em, .experience h2 em, .contact h2 em { color: #e4c47d; }
+.about-lead h2 span { color: #9b7132; }
+
+/* Alternative palette trial: charcoal, warm gold and neutral card surfaces */
+:root {
+  --ink: #30343b;
+  --blue: #343941;
+  --teal: #a9823f;
+  --accent: #a9823f;
+  --accent-light: #e3c987;
+  --coral: #a9823f;
+  --orange: #a9823f;
+  --yellow: #a9823f;
+  --footer: #343941;
+  --muted: #666b72;
+}
+.site-header { background: rgba(52, 57, 65, .96); }
+.hero, .experience, .contact { background: #343941; }
+h1 em, h2 em { color: #987236; }
+.hero h1 em, .experience h2 em, .contact h2 em { color: #e3c987; }
+.section-title span, .date, .work-type, .work-number,
+.skill-group p span, .linkedin-link, .contact-email span,
+.site-footer > a:last-child { color: #a9823f; }
+.experience .section-title span, .contact .section-title span { color: #e3c987; }
+.hero .wordmark span, .hero .text-link span, .hero .social-links a span { color: #e3c987; }
+
+.about-lead, .intro-copy, .experience-role, .experience-detail,
+.skill-group, .education-block, .achievement, .certificate-card,
+.contact-card, .work-card { background: #fffefa; border-color: #c8b784; }
+.about-lead { border-top-color: #a9823f; }
+.experience-role { border-top-color: #a9823f; }
+.skill-group:nth-child(1), .skill-group:nth-child(2), .skill-group:nth-child(3) {
+  border-color: #c8b784;
+  border-top-color: #a9823f;
+  background: #fffefa;
+}
+.education-block { border-left-color: #a9823f; }
+.achievement:nth-child(3), .achievement:nth-child(4) { background: #fffefa; border-color: #c8b784; }
+.work-card:nth-child(2), .work-card:nth-child(3), .work-card:nth-child(4) { border-color: #c8b784; }
+.role-tag { color: #85652e; background: #f4f0e6; }
+.portrait-stamp { background: #a9823f; }
+
+/* Forest green palette trial with the existing gold and neutral cards */
+:root {
+  --ink: #263d37;
+  --blue: #29483f;
+  --teal: #a9823f;
+  --accent: #a9823f;
+  --accent-light: #e3c987;
+  --coral: #a9823f;
+  --orange: #a9823f;
+  --yellow: #a9823f;
+  --footer: #29483f;
+  --muted: #626a66;
+}
+.site-header { background: rgba(41, 72, 63, .96); }
+.hero, .experience, .contact { background: #29483f; }
+h1 em, h2 em { color: #94733b; }
+.hero h1 em, .experience h2 em, .contact h2 em { color: #e3c987; }
+.section-title span, .date, .work-type, .work-number,
+.skill-group p span, .linkedin-link, .contact-email span,
+.site-footer > a:last-child { color: #a9823f; }
+.experience .section-title span, .contact .section-title span { color: #e3c987; }
+.hero .wordmark span, .hero .text-link span, .hero .social-links a span { color: #e3c987; }
+.about-lead, .intro-copy, .experience-role, .experience-detail,
+.skill-group, .education-block, .achievement, .certificate-card,
+.contact-card, .work-card { background: #fffefa; border-color: #c8b784; }
+.about-lead, .experience-role { border-top-color: #a9823f; }
+.skill-group:nth-child(1), .skill-group:nth-child(2), .skill-group:nth-child(3) {
+  border-color: #c8b784;
+  border-top-color: #a9823f;
+  background: #fffefa;
+}
+.education-block { border-left-color: #a9823f; }
+.achievement:nth-child(3), .achievement:nth-child(4) { background: #fffefa; border-color: #c8b784; }
+.work-card:nth-child(2), .work-card:nth-child(3), .work-card:nth-child(4) { border-color: #c8b784; }
+.role-tag { color: #85652e; background: #f4f0e6; }
+.portrait-stamp { background: #a9823f; }
+
+/* Gold hover feedback and a clearer portrait backdrop ring */
+.nav-links a:hover, .nav-note:hover,
+.nav-links a:focus-visible, .nav-note:focus-visible { color: #e3c987; }
+.nav-note:hover, .nav-note:focus-visible { border-color: #e3c987; }
+.hero::before { border: 2px solid rgba(227, 201, 135, .62); }
